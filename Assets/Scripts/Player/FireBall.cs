@@ -14,7 +14,7 @@ public class FireBall : MonoBehaviour
         Destroy(gameObject, lifetime); //destroy object after lifetime ends
     }
 
-    private void OnTriggerEnter2D(Collider2D ballCollision)
+    private void OnCollisionEnter2D(Collider2D ballCollision)
     {
         if(ballCollision.CompareTag("Enemy"))
         {
